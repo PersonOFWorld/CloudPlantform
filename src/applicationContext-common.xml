@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -21,17 +21,11 @@
 	
 		<!-- 静态资源访问 -->
 	<mvc:resources location="/user/imgs/" mapping="/user/imgs/**"/>
-	<!--<property name="url" value="jdbc:mysql://localhost/cloud"></property>
-        <property name="username" value="root"></property>
-        <property name="password" value="100785"></property>		 -->
-    <!-- <property name="url" value="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_onewe"></property>
-        <property name="username" value="w3zl3j2won"></property>
-        <property name="password" value="k4y1kx13mx4jiilzyyl0zii01zyimikzziijl1mh"></property>	 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
         <property name="url" value="jdbc:mysql://localhost/cloud"></property>
-        <property name="username" value="root"></property>
-        <property name="password" value="root"></property>	
+        <property name="username" value="****"></property>
+        <property name="password" value="****"></property>	
 	</bean>
 	<!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
